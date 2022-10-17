@@ -20,3 +20,6 @@ os.system("pip install backgroundremover")
 
 os.system("mkdir Uploads")
 os.system("mkdir OutputFile")
+
+
+print(agah)

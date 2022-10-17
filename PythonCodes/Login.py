@@ -12,3 +12,5 @@ firestoreDb.collection(u'testCollection').add({'yazar':'Orhan Veli'})
 snapshots = list(firestoreDb.collection(u'testCollection').get())
 for snap in snapshots:
  print(snap.to_dict())
+
+
