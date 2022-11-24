@@ -13,13 +13,12 @@ os.system("tar xzf Meshroom-2019.1.0-linux.tar.gz -C ./meshroom")
 
 
 #arka plan kaldıran kutuphane
-os.system("sudo apt install ffmpeg python3.6-dev")
-os.system("pip install --upgrade pip")
-os.system("pip install backgroundremover")
 
+os.system("pip install rembg")
+os.system("pip install easygui")
+#ghdccccccccccccccccccccccccccccccccccccccccccccccccccggggggggggg#
 
 os.system("mkdir Uploads")
 os.system("mkdir OutputFile")
 
 
-print(agah)
