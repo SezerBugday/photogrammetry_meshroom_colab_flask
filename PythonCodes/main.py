@@ -19,7 +19,7 @@ os.system("pip install rembg")
 os.system("pip install easygui")
 #ghdccccccccccccccccccccccccccccccccccccccccccccccccccggggggggggg#
 
-os.system("mkdir Uploads")
-os.system("mkdir OutputFile")
+os.system("mkdir temiz")
+os.system("mkdir kirli")
 
 
