@@ -22,4 +22,6 @@ os.system("pip install easygui")
 os.system("mkdir temiz")
 os.system("mkdir kirli")
 
+# obj to glb için kütüphane
 
+os.system("npm install -g obj2gltf")
