@@ -5,9 +5,9 @@ TEMPLATE = "/content/"
 
 app = Flask(__name__, template_folder=TEMPLATE)
 
-app.config['UPLOAD_FOLDER'] = "/content/Uploads"
+app.config['UPLOAD_FOLDER'] = "/content/input"
 
-ngrok.set_auth_token("2DJyoS7QMsne6ZsjPBWlik5uBBv_37hajTNHz6NFWXeczXf7A")
+ngrok.set_auth_token("2GxLRDzBS0fgWEesR7tac2e9BOs_6vtYMQMcNB3ETtSi2a8q7")
 public_url = ngrok.connect(port_no).public_url
 
 print(f"To acces the Gloable link please click {public_url}")
@@ -19,8 +19,12 @@ def upload_file():
         files = request.files.getlist("image")
         for file in files:
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], file.filename))
-
+            
+            
+        os.system("rembg p /content/input   /content/input")
+        
         return
+    
     return render_template("index.html")
 
 
