@@ -2,7 +2,8 @@ import os
 
 #pyngrok yukle
 os.system('pip install pyngrok')
-
+#boostrap yukle
+os.system("pip install flask-bootstrap")
 #github klonla
 os.system('git clone https://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@github.com/SezerBugday/photogrammetry_meshroom_colab_flask.git')
 
