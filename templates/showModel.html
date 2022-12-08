@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="node_modules/xterm/css/xterm.css" />
+      <script src="node_modules/xterm/lib/xterm.js"></script>
+</head>
+<body>
+<!-- Import the component -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script src="https://anvil.works/embed.js" async></script>
+<iframe style="width:100%;" data-anvil-embed src="https://IORLHGRYTJ47Q4BT.anvil.app"></iframe>
+<!-- Use it like any other HTML element -->
+<model-viewer  src="{{url_for('static', filename='kup.glb')}}"
+ar camera-controls 
+></model-viewer>
+<!-- modeller ve görseller static klasörü içinde olmali -->
+
+ <img src="{{url_for('static', filename='GoldSword.png')}}" align="middle" />
+</body>
+
+
+</html>
