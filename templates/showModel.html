@@ -14,9 +14,12 @@
 ar camera-controls 
 ></model-viewer>
 <!-- modeller ve görseller static klasörü içinde olmali -->
-
- <img src="{{url_for('static', filename='GoldSword.png')}}" align="middle" />
-</body>
+<form action="/uploadimages"  enctype="multipart/form-data">
+  <input type="submit" value="Add Image" name="submit">
+</form>
+<form action="SingUp"  enctype="multipart/form-data">
+  <input type="submit" value="Sing Up" name="submit">
+</form>
 
 
 </html>
