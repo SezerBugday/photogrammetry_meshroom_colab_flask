@@ -42,13 +42,15 @@ Doğrulama kodu gönderildi
   <a href="#about">About</a>
 </div>
 <p> Confirm the mail sent to  </p>
-<form action="/Login">
-    <input type="submit" value="Login" />
+<form action="/SentCode" method="POST">
+   <input type="text" placeholder="Code..." name="sifre" required/>
+    <input type="submit" value="Submit" />
 </form>
-<div style="padding-left:16px">
-  <h2>Top Navigation Example</h2>
-  <p>Some content..</p>
-</div>
+
+{% if yazi %}
+ <p> {{yazi}} </p>
+{% endif %}
+
 
 </body>
 </html>
