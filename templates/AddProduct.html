@@ -94,43 +94,52 @@
 </head>
 <body>
 
-
+<form action="/SaveProduct" method="post" enctype="multipart/form-data">
 <div>
-  <link href="./add-product.css" rel="stylesheet" />
+ 
   <div class="add-product-container">
     <textarea
+      name="product_name"
       placeholder="placeholder"
       class="add-product-textarea textarea"
     ></textarea>
     <textarea
+    name="product_info"
       placeholder="placeholder"
       class="add-product-textarea1 textarea"
     ></textarea>
     <textarea
+      name="place1"
       placeholder="placeholder"
       class="add-product-textarea2 textarea"
     ></textarea>
     <textarea
+      name="place2"
       placeholder="placeholder"
       class="add-product-textarea3 textarea"
     ></textarea>
     <textarea
+      name="place3"
       placeholder="placeholder"
       class="add-product-textarea4 textarea"
     ></textarea>
     <label class="add-product-text"> Product name :</label>
-    <label class="add-product-text1"> Product name :</label>
+    <label class="add-product-text1"> Product info :</label>
     <label class="add-product-text2">Link1</label>
-    <label class="add-product-text3">Link1</label>
-    <label class="add-product-text4">Link1</label>
+    <label class="add-product-text3">Link2</label>
+    <label class="add-product-text4">Link3</label>
     <img
       src="https://play.teleporthq.io/static/svg/default-img.svg"
       alt="image"
       class="add-product-image"
     />
-    <button class="add-product-button button">Save Page</button>
+    <button type="submit" class="add-product-button button">Save Product</button>
   </div>
 </div>
+</form>
+
+
+
 
 </body>
 </html>
