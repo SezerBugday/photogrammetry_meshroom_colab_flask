@@ -3,15 +3,15 @@
   width: 100%;
   display: flex;
   overflow: auto;
-  min-height: 100vh;
+  min-height: var(--dl-size-size-large);
   align-items: center;
   flex-direction: column;
-  justify-content: flex-start;
-  background-color: #0e8282;
+  background-size: cover;
+  background-image: url("{{url_for('static', filename='background.png')}}");
 }
 .home-navbar-interactive {
   width: 100%;
-  height: 117px;
+  height: 100px;
   display: flex;
   position: relative;
   align-items: center;
@@ -19,60 +19,61 @@
   border-color: var(--dl-color-gray-black);
   border-width: 1px;
   padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
   padding-bottom: var(--dl-space-space-twounits);
+  background-size: cover;
   justify-content: space-between;
-  background-color: #00424c;
+  background-image: url("{{url_for('static', filename='background.png')}}");
 }
 .home-image {
-  width: 318px;
-  height: 113px;
-  box-shadow: 5px 5px 10px 0px #3c0f7c;
+  width: 320px;
+  height: 90px;
   object-fit: cover;
 }
 .home-button {
   color: #ffffff;
   align-self: center;
-  box-shadow: 5px 5px 10px 0px #0c8bc2;
-  border-color: #1120bd;
+  box-shadow: 5px 5px 10px 0px #6dff76;
+  border-color: #ffffff;
   border-style: ridge;
   border-width: 5px;
-  background-color: #1d90f5;
+  background-color: #12a04a;
 }
 .home-button1 {
   color: #ffffff;
   align-self: center;
-  box-shadow: rgb(12, 139, 194) 5px 5px 10px 0px;
-  border-color: #1120bd;
+  box-shadow: 5px 5px 10px 0px #6dff76;
+  border-color: #ffffff;
   border-style: ridge;
   border-width: 5px;
-  background-color: #1d90f5;
+  background-color: #12a04a;
 }
 .home-button2 {
   color: #ffffff;
   align-self: center;
-  box-shadow: rgb(12, 139, 194) 5px 5px 10px 0px;
-  border-color: #1120bd;
+  box-shadow: 5px 5px 10px 0px #6dff76;
+  border-color: #ffffff;
   border-style: ridge;
   border-width: 5px;
-  background-color: #1d90f5;
+  background-color: #12a04a;
 }
 .home-button3 {
   color: #ffffff;
   align-self: center;
-  box-shadow: rgb(12, 139, 194) 5px 5px 10px 0px;
-  border-color: #1120bd;
+  box-shadow: 5px 5px 10px 0px #6dff76;
+  border-color: #ffffff;
   border-style: ridge;
   border-width: 5px;
-  background-color: #1d90f5;
+  background-color: #12a04a;
 }
 .home-button4 {
   color: #ffffff;
   align-self: center;
-  box-shadow: rgb(12, 139, 194) 5px 5px 10px 0px;
-  border-color: #1120bd;
+  box-shadow: 5px 5px 10px 0px #6dff76;
+  border-color: #ffffff;
   border-style: ridge;
   border-width: 5px;
-  background-color: #1d90f5;
+  background-color: #12a04a;
 }
 .home-container1 {
   flex: 0 0 auto;
@@ -193,66 +194,37 @@
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
-.home-container5 {
-  top: 117px;
-  flex: 0 0 auto;
-  left: 0px;
-  width: 624px;
-  height: 879px;
+.home-resim {
+  width: 50%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 662px;
   display: flex;
-  position: absolute;
   align-self: flex-start;
-  align-items: flex-end;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.home-image2 {
-  width: 100%;
-  height: 894px;
-  object-fit: cover;
-}
-.home-container6 {
-  width: 573px;
-  height: 876px;
-  display: flex;
-  position: relative;
-  align-self: flex-end;
   align-items: center;
   flex-direction: column;
+  background-size: cover;
   justify-content: center;
+  background-image: url("{{url_for('static', filename='Vr_image.png')}}");
 }
+
 .home-button5 {
-  top: 366px;
-  left: 101px;
+  top: 339px;
   color: rgb(255, 255, 255);
+  right: 118px;
   width: 281px;
   height: 153px;
   position: absolute;
   font-size: 32px;
   align-self: center;
-  box-shadow: rgb(12, 139, 194) 5px 5px 10px 0px;
+  box-shadow: 5px 5px 10px 0px #6dff76;
   text-align: center;
   line-height: 2;
-  border-color: #1120bd;
+  border-color: #ffffff;
   border-style: ridge;
   border-width: 5px;
-  background-color: rgb(29, 144, 245);
+  background-color: #12a04a;
 }
-@media(max-width: 1600px) {
-  .home-container {
-    background-color: rgba(14, 130, 130, 0.43);
-  }
-  .home-navbar-interactive {
-    padding-right: 0px;
-    background-color: rgba(0, 66, 76, 0);
-  }
-  .home-image2 {
-    height: 927px;
-  }
-  .home-container6 {
-    width: 567px;
-  }
-}
+
 
 </style>
 <div>
@@ -261,14 +233,14 @@
     <header data-thq="thq-navbar" class="home-navbar-interactive">
       <img
         alt="image"
-        src="/playground_assets/logo-200h.png"
+        src="{{url_for('static', filename='logo.png')}}"
         class="home-image"
       />
-      <button class="home-button button">Home</button>
-      <button class="home-button1 button">Who are we</button>
+      <button class="home-button button">HOME</button>
+      <button class="home-button1 button">WHO ARE WE ?</button>
       <button class="home-button2 button">FAQ</button>
-      <button class="home-button3 button">Login</button>
-      <button class="home-button4 button">Sign Up</button>
+      <button class="home-button3 button">LOGIN</button>
+      <button class="home-button4 button">SING UP</button>
       <div class="home-container1"></div>
       <div class="home-container2"></div>
       <div data-thq="thq-navbar-btn-group" class="home-btn-group"></div>
@@ -284,7 +256,7 @@
           <div class="home-container3">
             <img
               alt="image"
-              src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
+              "{{url_for('static', filename='background.png')}}"
               class="home-image1"
             />
             <div data-thq="thq-close-menu" class="home-menu-close">
@@ -328,19 +300,11 @@
         </div>
       </div>
     </header>
-    <div class="home-container5">
-      <img
-        alt="image"
-        src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE1fHxhdWdtZW50ZWQlMjByZXxlbnwwfHx8fDE2NzE2NzA3NTU&amp;ixlib=rb-4.0.3&amp;h=1000"
-        class="home-image2"
-      />
-    </div>
-    <div class="home-container6">
+        <div class="home-resim">
         <form action="/uploadimages">
          <button class="home-button5 button">Create an OBJECT</button>
       </form>
       
-    </div>
-  </div>
+
 </div>
 
