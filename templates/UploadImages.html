@@ -367,6 +367,21 @@
   border-width: 5px;
   background-color: rgb(18, 160, 74);
 }
+.upload-images-button55 {
+  top: 150px;
+  left: 126px;
+  color: rgb(255, 255, 255);
+  width: 150px;
+  height: 45px;
+  position: absolute;
+  font-size: 20px;
+  align-self: center;
+  box-shadow: rgb(109, 255, 118) 5px 5px 10px 0px;
+  border-color: #ffffff;
+  border-style: ridge;
+  border-width: 5px;
+  background-color: rgb(18, 160, 74);
+}
 .upload-images-text37 {
   font-size: 25px;
 }
@@ -379,9 +394,32 @@
 }
 
 .thumbnail {
-  height: 200px;
+  height: 25px;
+  weight: 25px;
 }
 
+.upload-images-button6 {
+  left: 129px;
+  color: rgb(255, 255, 255);
+  width: 164px;
+  bottom: 28px;
+  height: 47px;
+  position: absolute;
+  font-size: 20px;
+  align-self: center;
+  box-shadow: rgb(109, 255, 118) 5px 5px 10px 0px;
+  border-color: #ffffff;
+  border-style: ridge;
+  border-width: 5px;
+  padding-right: 0px;
+  background-color: #227745;
+}
+.upload-images-text38 {
+  left: -2px;
+  bottom: 10px;
+  position: absolute;
+  font-size: 15px;
+}
  </style>
  <div>
 
@@ -528,10 +566,10 @@
         <form action="/uploadimages" method="post" enctype="multipart/form-data">
         <input type="file" name="image"  style="display: none" id="imageUpload" multiple="multiple" accept="image/jpeg, image/png, image/jpg"> 
                     
-              <input type="submit" value="ConvertTo3D" name="submit">
+              <input type="submit" id="imageUpload"  class="upload-images-button6 button" value="ConvertTo3D" name="submit">
                    <output>
               </form>
-     
+
           <span>
             <span> 
 
