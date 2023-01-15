@@ -11,7 +11,7 @@
 }
 .home-navbar-interactive {
   width: 100%;
-  height: 100px;
+  height: 99px;
   display: flex;
   position: relative;
   align-items: center;
@@ -26,8 +26,9 @@
   background-image: url("{{url_for('static', filename='background.png')}}");
 }
 .home-image {
-  width: 320px;
-  height: 90px;
+  width: 318px;
+  height: 87px;
+  box-shadow: 5px 5px 10px 0px #3c0f7c;
   object-fit: cover;
 }
 .home-button {
@@ -204,9 +205,8 @@
   flex-direction: column;
   background-size: cover;
   justify-content: center;
-  background-image: url("{{url_for('static', filename='Vr_image.png')}}");
+   background-image: url("{{url_for('static', filename='Vr_image.png')}}");
 }
-
 .home-button5 {
   top: 339px;
   color: rgb(255, 255, 255);
@@ -224,18 +224,88 @@
   border-width: 5px;
   background-color: #12a04a;
 }
+.home-container5 {
+  width: 100%;
+  height: 640px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+.home-text5 {
+  top: 136px;
+  left: 13px;
+  color: #ffffff;
+  position: absolute;
+  font-size: 50px;
+}
+.home-button6 {
+  color: transparent;
+  width: 321px;
+  height: 278px;
+  margin-top: 200px;
+  background-size: cover;
+  background-image: url("{{url_for('static', filename='cuzdan_resim.jpeg')}}");
+}
+.home-text6 {
+  top: 250px;
+  left: 136px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-size: 30px;
+}
+.home-button7 {
+  top: 284px;
+  left: 413px;
+  color: transparent;
+  width: 321px;
+  height: 278px;
+  position: absolute;
+  padding-left: 11px;
+  padding-right: 0px;
+  background-size: cover;
+  background-image: url("{{url_for('static', filename='chair_resim.png')}}");
+}
+.home-button8 {
+  top: 282px;
+  color: transparent;
+  right: 60px;
+  width: 321px;
+  height: 278px;
+  position: absolute;
+  align-self: center;
+  padding-left: 5px;
+  padding-right: 0px;
+  background-size: cover;
+  background-image: url("{{url_for('static', filename='vaso_resim.png')}}");
+}
+.home-text7 {
+  top: 252px;
+  left: 537px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-size: 30px;
+}
+.home-text8 {
+  top: 248px;
+  color: rgb(255, 255, 255);
+  right: 173px;
+  position: absolute;
+  font-size: 30px;
+}
 
-
-</style>
+ </style>
 <div>
-
+  <link href="./home.css" rel="stylesheet" />
   <div class="home-container">
     <header data-thq="thq-navbar" class="home-navbar-interactive">
       <img
         alt="image"
-        src="{{url_for('static', filename='logo.png')}}"
+         src="{{url_for('static', filename='logo.png')}}"
         class="home-image"
       />
+
+
       <form action="">
       <button class="home-button button">HOME</button>
       </form>
@@ -244,9 +314,7 @@
       <form action="/Login" >
       <button class="home-button3 button">LOGIN</button>
       </form>
-      
 
-      <button class="home-button4 button">SING UP</button>
       <div class="home-container1"></div>
       <div class="home-container2"></div>
       <div data-thq="thq-navbar-btn-group" class="home-btn-group"></div>
@@ -262,7 +330,7 @@
           <div class="home-container3">
             <img
               alt="image"
-              "{{url_for('static', filename='background.png')}}"
+              src="{{url_for('static', filename='background.png')}}"
               class="home-image1"
             />
             <div data-thq="thq-close-menu" class="home-menu-close">
@@ -306,10 +374,25 @@
         </div>
       </div>
     </header>
-        <div class="home-resim">
-        <form action="/uploadimages">
-         <button class="home-button5 button">Create an OBJECT</button>
-      </form>
-      
+    <div class="home-resim"></div>
+    <button class="home-button5 button">Create an OBJECT</button>
+    <div class="home-container5">
+      <h1 class="home-text5">All Products</h1>
 
-</div>
+      <form action="/Wallet" >
+      <button class="home-button6 button">Wallet</button>
+      <span class="home-text6">Wallet</span>
+      </form>
+
+      <form action="/Chair" >
+      <button class="home-button7 button">Chair</button>
+      <span class="home-text7">Chair</span>
+      </form>
+
+      <form action="/Vase" >
+      <button class="home-button8 button">Vase</button>
+      <span class="home-text8">Vase</span>
+      </form>
+
+    </div>
+  </div>
