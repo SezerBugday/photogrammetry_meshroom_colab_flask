@@ -5,7 +5,7 @@ os.system('pip install pyngrok')
 #bootsrap yukle
 os.system("pip install flask-bootstrap")
 #github klonla
-os.system('git clone https://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@github.com/SezerBugday/photogrammetry_meshroom_colab_flask.git')
+#os.system('git clone https://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@github.com/SezerBugday/photogrammetry_meshroom_colab_flask.git')
 os.system('!git clone https://github.com/SezerBugday/photogrammetry_meshroom_colab_flask.git')
 # meshroom dosyalarını sunucuya dahil et
 os.system("wget -N https://github.com/alicevision/meshroom/releases/download/v2019.1.0/Meshroom-2019.1.0-linux.tar.gz")
