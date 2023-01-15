@@ -1,0 +1,497 @@
+<style>
+  .product-page-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: var(--dl-size-size-large);
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+ background-image:  url("{{url_for('static', filename='background.png')}}");
+}
+.product-page-navbar-interactive {
+  width: 100%;
+  height: 99px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-twounits);
+  background-size: cover;
+  justify-content: space-between;
+  background-image:  url("{{url_for('static', filename='background.png')}}");
+}
+.product-page-image {
+  width: 318px;
+  height: 87px;
+  box-shadow: 5px 5px 10px 0px #3c0f7c;
+  object-fit: cover;
+}
+.product-page-button {
+  color: #ffffff;
+  align-self: center;
+  box-shadow: 5px 5px 10px 0px #6dff76;
+  border-color: #ffffff;
+  border-style: ridge;
+  border-width: 5px;
+  background-color: #12a04a;
+}
+.product-page-button1 {
+  color: #ffffff;
+  align-self: center;
+  box-shadow: 5px 5px 10px 0px #6dff76;
+  border-color: #ffffff;
+  border-style: ridge;
+  border-width: 5px;
+  background-color: #12a04a;
+}
+.product-page-button2 {
+  color: #ffffff;
+  align-self: center;
+  box-shadow: 5px 5px 10px 0px #6dff76;
+  border-color: #ffffff;
+  border-style: ridge;
+  border-width: 5px;
+  background-color: #12a04a;
+}
+.product-page-button3 {
+  color: #ffffff;
+  align-self: center;
+  box-shadow: 5px 5px 10px 0px #6dff76;
+  border-color: #ffffff;
+  border-style: ridge;
+  border-width: 5px;
+  background-color: #12a04a;
+}
+.product-page-button4 {
+  color: #ffffff;
+  align-self: center;
+  box-shadow: 5px 5px 10px 0px #6dff76;
+  border-color: #ffffff;
+  border-style: ridge;
+  border-width: 5px;
+  background-color: #12a04a;
+}
+.product-page-container1 {
+  flex: 0 0 auto;
+  width: auto;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+}
+.product-page-container2 {
+  flex: 0 0 auto;
+  width: auto;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+}
+.product-page-btn-group {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.product-page-burger-menu {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.product-page-icon {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.product-page-icon02 {
+  top: 25px;
+  right: 12px;
+  width: 63px;
+  height: 52px;
+  position: absolute;
+}
+.product-page-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: 32px;
+  z-index: 100;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.product-page-nav {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.product-page-container3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+}
+.product-page-image1 {
+  height: 2rem;
+}
+.product-page-menu-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-page-icon04 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.product-page-nav1 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.product-page-text {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.product-page-text01 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.product-page-text02 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.product-page-text03 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.product-page-text04 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.product-page-container4 {
+  flex: 0 0 auto;
+  width: auto;
+  display: flex;
+  margin-top: var(--dl-space-space-unit);
+  align-items: center;
+  flex-direction: row;
+}
+.product-page-login {
+  margin-right: var(--dl-space-space-twounits);
+}
+.product-page-icon-group {
+  display: flex;
+}
+.product-page-icon06 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+  margin-right: var(--dl-space-space-twounits);
+}
+.product-page-icon08 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+  margin-right: var(--dl-space-space-twounits);
+}
+.product-page-icon10 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.product-page-text05 {
+  top: 45px;
+  color: #10f56b;
+  right: 77px;
+  position: absolute;
+  font-style: normal;
+  font-weight: 700;
+}
+.product-page-resim {
+  width: 50%;
+  height: 662px;
+  display: flex;
+  position: relative;
+  align-self: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.product-page-container5 {
+  top: 52px;
+  right: 19px;
+  width: 525px;
+  height: 406px;
+  display: flex;
+  position: absolute;
+  align-self: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #bf59b6;
+}
+.product-page-text06 {
+  top: 467px;
+  color: rgb(255, 255, 255);
+  right: 60px;
+  position: absolute;
+  font-size: 15px;
+}
+.product-page-form {
+  right: 29px;
+  width: 498px;
+  bottom: 0px;
+  height: 662px;
+  display: flex;
+  position: absolute;
+  align-self: flex-start;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.product-page-text10 {
+  top: 56px;
+  left: 4px;
+  color: #2aff00;
+  position: absolute;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+.product-page-text11 {
+  top: 26px;
+  left: 4px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-size: 20px;
+}
+.product-page-text12 {
+  left: 8px;
+  color: #2aff00;
+  bottom: 79px;
+  position: absolute;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+.product-page-text13 {
+  top: 478px;
+  left: 3px;
+  color: #2aff00;
+  position: absolute;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+.product-page-text14 {
+  top: 400px;
+  left: 8px;
+  color: #2aff00;
+  position: absolute;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+.product-page-text15 {
+  top: 273px;
+  left: 7px;
+  color: #2aff00;
+  position: absolute;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+.product-page-text16 {
+  top: 118px;
+  left: 3px;
+  color: #2aff00;
+  position: absolute;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+.product-page-text17 {
+  top: 247px;
+  left: 1px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-size: 20px;
+}
+.product-page-text18 {
+  top: 87px;
+  left: 2px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-size: 20px;
+}
+.product-page-text19 {
+  top: 375px;
+  left: 4px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-size: 20px;
+}
+.product-page-text20 {
+  top: 452px;
+  left: 4px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-size: 20px;
+}
+.product-page-text21 {
+  top: 534px;
+  left: 7px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-size: 20px;
+}
+.product-page-button5 {
+  top: 326px;
+  left: 2px;
+  color: rgb(255, 255, 255);
+  width: 167px;
+  height: 39px;
+  position: absolute;
+  align-self: center;
+  box-shadow: rgb(109, 255, 118) 5px 5px 10px 0px;
+  border-color: #ffffff;
+  border-style: ridge;
+  border-width: 5px;
+  background-color: rgb(18, 160, 74);
+}
+model-viewer {
+  width: 500px;
+  height: 400px;
+}
+ </style>
+
+ <div>
+  <script
+    type="text/javascript"
+    src="https://unpkg.com/dangerous-html@0.1.11/dist/default/lib.umd.js"
+  ></script>
+
+  <div class="product-page-container">
+    <header data-thq="thq-navbar" class="product-page-navbar-interactive">
+      <img
+        alt="image"
+        src="{{url_for('static', filename='logo.png')}}"
+        class="product-page-image"
+      />
+      <button class="product-page-button button">HOME</button>
+      <button class="product-page-button1 button">WHO ARE WE ?</button>
+      <button class="product-page-button2 button">FAQ</button>
+      <button class="product-page-button3 button">LOGIN</button>
+      <button class="product-page-button4 button">SING UP</button>
+      <div class="product-page-container1"></div>
+      <div class="product-page-container2"></div>
+      <div data-thq="thq-navbar-btn-group" class="product-page-btn-group"></div>
+      <div data-thq="thq-burger-menu" class="product-page-burger-menu">
+        <svg viewBox="0 0 1024 1024" class="product-page-icon">
+          <path
+            d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+          ></path>
+        </svg>
+      </div>
+      <svg viewBox="0 0 1024 1024" class="product-page-icon02">
+        <path
+          d="M870.286 765.143c-14.857-106.857-58.286-201.714-155.429-214.857-50.286 54.857-122.857 89.714-202.857 89.714s-152.571-34.857-202.857-89.714c-97.143 13.143-140.571 108-155.429 214.857 79.429 112 210.286 185.714 358.286 185.714s278.857-73.714 358.286-185.714zM731.429 365.714c0-121.143-98.286-219.429-219.429-219.429s-219.429 98.286-219.429 219.429 98.286 219.429 219.429 219.429 219.429-98.286 219.429-219.429zM1024 512c0 281.714-228.571 512-512 512-282.857 0-512-229.714-512-512 0-282.857 229.143-512 512-512s512 229.143 512 512z"
+        ></path>
+      </svg>
+      <div data-thq="thq-mobile-menu" class="product-page-mobile-menu">
+        <div
+          data-thq="thq-mobile-menu-nav"
+          data-role="Nav"
+          class="product-page-nav"
+        >
+          <div class="product-page-container3">
+            <img
+              alt="image"
+              src = "{{url_for('static', filename='background.png')}}"
+              class="product-page-image1"
+            />
+            <div data-thq="thq-close-menu" class="product-page-menu-close">
+              <svg viewBox="0 0 1024 1024" class="product-page-icon04">
+                <path
+                  d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <nav
+            data-thq="thq-mobile-menu-nav-links"
+            data-role="Nav"
+            class="product-page-nav1"
+          >
+            <span class="product-page-text">About</span>
+            <span class="product-page-text01">Features</span>
+            <span class="product-page-text02">Pricing</span>
+            <span class="product-page-text03">Team</span>
+            <span class="product-page-text04">Blog</span>
+          </nav>
+          <div class="product-page-container4">
+            <button class="product-page-login button">Login</button>
+            <button class="button">Register</button>
+          </div>
+        </div>
+        <div class="product-page-icon-group">
+          <svg viewBox="0 0 950.8571428571428 1024" class="product-page-icon06">
+            <path
+              d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+            ></path></svg
+          ><svg
+            viewBox="0 0 877.7142857142857 1024"
+            class="product-page-icon08"
+          >
+            <path
+              d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+            ></path></svg
+          ><svg
+            viewBox="0 0 602.2582857142856 1024"
+            class="product-page-icon10"
+          >
+            <path
+              d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <span class="product-page-text05">SEZER</span>
+    </header>
+    <div class="product-page-resim">
+      <div class="product-page-container5">
+        <div>
+         
+           
+<script type='module' src='https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js'></script>
+
+<!-- Use it like any other HTML element -->
+<model-viewer  src= "{{url_for('static', filename='Chair.glb')}}"
+ar camera-controls 
+></model-viewer>
+        
+        </div>
+      </div>
+      <span class="product-page-text06">
+        <span>
+          The product you created the page for is above. You can examine this
+        </span>
+        <br />
+        <span>product in the real world with augmented reality on mobile.</span>
+      </span>
+    </div>
+    <div class="product-page-form">
+      <span class="product-page-text10"> Modern Chair </span>
+      <span class="product-page-text11">Product Name :</span>
+      <span class="product-page-text12">sezerious.com</span>
+      <span class="product-page-text13">n11.com</span>
+      <span class="product-page-text14">trendyol.com </span>
+      <span class="product-page-text15">http://6bab-35-237-253-59.ngrok.io/58585</span>
+      <span class="product-page-text16">This chair is so nice</span>
+      <span class="product-page-text17">Product Page Link : </span>
+      <span class="product-page-text18">Product Information :</span>
+      <span class="product-page-text19">Selling Store 1:</span>
+      <span class="product-page-text20">Selling Store 2:</span>
+      <span class="product-page-text21">Selling Store 3:</span>
