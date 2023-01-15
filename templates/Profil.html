@@ -1,5 +1,5 @@
-<style> 
-      .profil-container {
+<style>
+.profil-container {
   width: 100%;
   display: flex;
   overflow: auto;
@@ -7,7 +7,7 @@
   align-items: center;
   flex-direction: column;
   background-size: cover;
-  background-image: url("/playground_assets/pastel%20damlalar%20temel%20sade%20sunum-1500w.png");
+  background-image: url("{{url_for('static', filename='background.png')}}");
 }
 .profil-navbar-interactive {
   width: 100%;
@@ -23,7 +23,7 @@
   padding-bottom: var(--dl-space-space-twounits);
   background-size: cover;
   justify-content: space-between;
-  background-image: url("/playground_assets/pastel%20damlalar%20temel%20sade%20sunum-1500w.png");
+    background-image: url("{{url_for('static', filename='background.png')}}");
 }
 .profil-image {
   width: 318px;
@@ -233,7 +233,7 @@
   flex-direction: column;
   background-size: cover;
   justify-content: center;
-  background-image: url("https://play.teleporthq.io/static/svg/default-img.svg");
+  background-image: url("{{url_for('static', filename='chair_resim.png')}}");
 }
 .profil-urun3 {
   top: 246px;
@@ -248,7 +248,7 @@
   flex-direction: column;
   background-size: cover;
   justify-content: center;
-  background-image: url("https://play.teleporthq.io/static/svg/default-img.svg");
+  background-image: url("{{url_for('static', filename='vaso_resim.png')}}");
 }
 .profil-urun1 {
   top: 252px;
@@ -263,10 +263,10 @@
   flex-direction: column;
   background-size: cover;
   justify-content: center;
-  background-image: url("https://play.teleporthq.io/static/svg/default-img.svg");
+  background-image:  url("{{url_for('static', filename='cuzdan_resim.jpeg')}}");
 }
 .profil-text06 {
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   font-size: 50px;
   align-self: center;
 }
@@ -291,16 +291,15 @@
   position: absolute;
   font-size: 30px;
 }
+  </style>
 
-</style>
-
-<div>
-  <link href="./profil.css" rel="stylesheet" />
+  <div>
+  
   <div class="profil-container">
     <header data-thq="thq-navbar" class="profil-navbar-interactive">
       <img
         alt="image"
-        src="/playground_assets/logo-200h.png"
+       src="{{url_for('static', filename='logo.png')}}"
         class="profil-image"
       />
       <button class="profil-button button">HOME</button>
@@ -328,7 +327,7 @@
           <div class="profil-container3">
             <img
               alt="image"
-              src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
+                src="{{url_for('static', filename='background.png')}}"
               class="profil-image1"
             />
             <div data-thq="thq-close-menu" class="profil-menu-close">
@@ -374,13 +373,37 @@
       <span class="profil-text05">SEZER</span>
     </header>
     <div class="profil-resim">
-      <div class="profil-urun2"></div>
-      <div class="profil-urun3"></div>
-      <div class="profil-urun1"></div>
-      <h1 class="profil-text06">ALL PRODUCTS</h1>
-      <span class="profil-text07">Wallet</span>
+
+        <form action="/Chair" >
+      <div >
+      <button class="profil-urun2"></button>
       <span class="profil-text08">Chair</span>
+        </form>    
+      </div>
+
+        <form action="/Vase" >
+      <div >
+      <button class="profil-urun3"></button>
       <span class="profil-text09">Vase</span>
+        </form>    
+      </div>
+
+      <form action="/Wallet" >
+      <div >
+      <button class="profil-urun1"></button>
+      <span class="profil-text07">Wallet</span>
+        </form>    
+      </div>
+ 
+      <h1 class="profil-text06">MY PRODUCTS</h1>
+      
+
+
+
+  
+
+ 
+
     </div>
   </div>
 </div>
